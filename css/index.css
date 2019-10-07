@@ -25,7 +25,7 @@ body{
     text-align: center;
     justify-content: space-between;
     align-items: center;
-    border:1px solid orange;
+    /* border:1px solid orange; */
 	/* position: sticky;
 	overflow: hidden;
 	top: 0;
@@ -44,7 +44,7 @@ nav {
 }
 nav .links {
     display:flex;
-    border: 1px solid blue;
+    /* border: 1px solid blue; */
     max-width: 75%;
 }
 nav .links a{
@@ -87,9 +87,11 @@ h1{
 .get-started{
 	border: 1px solid black;
 	padding: 3px 25px;
-	width: 50%;
+    width: 150px;
+    height; 30px;
 	margin: 0 auto;
-	text-align: center;
+    text-align: center;
+    align-items: center;
 }
 h2 {
 	font-size: 18px;
@@ -114,28 +116,13 @@ h3 {
 	padding: 0% 3% 0% 0%;
 	text-align:left;
 }
-.feature-content2{
-	border-top: 1px solid black;
-	margin: auto;
-	display: flex;
-	justify-content: space-between;
-	flex-wrap: wrap;
-	padding: 3% 0%;
-	width: 100%;
-}
+
 .features2 {
     width: 33%;
-	text-align: left
+	text-align: left;
 	padding: 0% 5% 0% 0%;
 }
-.features3 {
-	margin: 20px 0px;
-	border: 2px solid black;
-	background-color: whitesmoke;
-	width: 47.5%;
-	padding: 3%;
-	text-align:left;
-}
+
 .bottom-content{
 	border-bottom: 1px solid black;
     display: flex;
@@ -152,9 +139,9 @@ h3 {
 	text-align: center;
 }
 .contact{
-
 	display:flex;
-	flex-direction: column;
+    flex-direction: column;
+    margin-top: 4%;
 }
 ul{
 	list-style-type:square;
@@ -171,5 +158,66 @@ footer {
     }
     nav {
         flex-direction: column-reverse;
+    }
+    .innovation {
+        padding: 0;
+    }
+}
+
+@media (max-width: 500px){
+    .top-header img {
+        display: none;
+    }
+    nav {
+        flex-direction: column-reverse;
+    }
+    nav .links {
+        display:flex;
+        max-width: 100%;
+        flex-direction: column;
+        border-top: 1px solid black;
+    }
+    nav .links a{
+        display:flex;
+        border-bottom: 1px solid black;
+        max-width: 100%;
+        flex-direction: column;
+        padding: 3% 0;
+        font-size: 20px;
+    }
+    .innovation {
+        padding: 0;
+        width: 100%;
+    }
+    #logo {
+        margin: 3% 0;
+    }
+    .feature-content{
+        width: 95%;
+    }
+    .features {
+        align-items: left;
+        width: 100%;
+        text-align: left;
+        padding: 6% 0;
+    }
+    #middle-img {
+        display: flex;
+        width: 95%;
+        align-items: center;
+    }
+    .bottom-content {
+        width:95%;
+        flex-direction: column;
+        margin-bottom: 5%;
+    }
+    .features2 {
+        align-items: left;
+        width: 100%;
+        text-align: left;
+        padding: 4% 0;
+    }
+    .contact {
+        width: 95%;
     }
 }
